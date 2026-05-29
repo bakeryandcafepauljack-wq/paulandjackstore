@@ -10,11 +10,12 @@
             theme: {
                 extend: {
                     colors: {
-                        coffeeBrown: '#4A3B32',
-                        classicBeige: '#F4F1EA',
-                        mutedTan: '#D2C4B4',
-                        darkCharcoal: '#2B2B2B',
-                        softWhite: '#FAFAFA'
+                        espressoDark: '#2A1E17',
+                        cafeMacchiato: '#4A3728',
+                        warmCream: '#FDFBF7',
+                        latteLight: '#F4F0EA',
+                        modernCharcoal: '#1A1A1A',
+                        mutedTaupe: '#8C827A'
                     }
                 }
             }
@@ -22,304 +23,307 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Helvetica', Arial, sans-serif; }
-        h1, h2, h3, .serif-font { font-family: 'Georgia', serif; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .display-font { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-classicBeige text-darkCharcoal antialiased">
+<body class="bg-warmCream text-modernCharcoal antialiased selection:bg-cafeMacchiato selection:text-white">
 
-    <header class="bg-white border-b border-mutedTan">
-        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <a href="#" class="text-3xl font-semibold tracking-tight text-coffeeBrown">
-                Paul & Jack Bakery
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-latteLight">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <a href="#" class="text-2xl font-semibold tracking-tight text-espressoDark hover:opacity-90 transition">
+                Paul &amp; Jack <span class="font-light italic text-mutedTaupe text-xl">Bakery</span>
             </a>
-            <nav class="flex space-x-8 text-sm font-medium text-stone-600">
-                <a href="#menu" class="hover:text-coffeeBrown underline underline-offset-4">Our Menu</a>
-                <a href="#reviews" class="hover:text-coffeeBrown underline underline-offset-4">Customer Reviews</a>
-                <a href="#visit" class="hover:text-coffeeBrown underline underline-offset-4">Location & Hours</a>
+            <nav class="flex space-x-8 text-xs uppercase tracking-widest font-medium text-mutedTaupe">
+                <a href="#menu" class="hover:text-espressoDark transition-colors duration-200">Our Menu</a>
+                <a href="#reviews" class="hover:text-espressoDark transition-colors duration-200">Reviews</a>
+                <a href="#visit" class="hover:text-espressoDark transition-colors duration-200">Location &amp; Hours</a>
             </nav>
         </div>
     </header>
 
-    <section class="py-12 md:py-20 bg-softWhite border-b border-mutedTan">
-        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-4 text-center md:text-left">
-                <p class="text-sm uppercase tracking-wider text-stone-500 font-semibold">Established Bakery — Wake Forest, NC</p>
-                <h1 class="text-4xl md:text-5xl text-coffeeBrown font-normal leading-tight">
-                    Traditional European Baked Goods & Desserts
+    <section class="py-16 md:py-24 bg-gradient-to-b from-white to-warmCream border-b border-latteLight">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-block text-[11px] uppercase tracking-[0.25em] text-mutedTaupe font-semibold bg-latteLight/50 px-3 py-1 rounded">Wake Forest, NC — Established Craft Bakery</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl text-espressoDark font-normal leading-[1.15]">
+                    Artisanal European <br class="hidden lg:inline"><span class="italic font-light text-mutedTaupe">Pastries &amp; Desserts</span>
                 </h1>
-                <p class="text-base text-stone-600 leading-relaxed">
-                    Welcome to Paul & Jack. We specialize in classic pastries, fresh croissants, and premium dessert treats prepared daily. Stop by our quiet storefront location on Main Street for a coffee and a selection from our daily counter display.
+                <p class="text-sm md:text-base text-stone-600 font-light leading-relaxed max-w-xl">
+                    Welcome to Paul &amp; Jack. We specialize in contemporary dessert innovations, freshly laminated croissants, and premium espresso pairings curated daily. Visit our minimalist storefront on Main Street for an elevated cafe experience.
                 </p>
-                <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#menu" class="bg-coffeeBrown text-white px-6 py-3 rounded text-sm font-medium hover:bg-stone-700 transition">
-                        View Menu Selection
+                <div class="pt-4 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#menu" class="bg-espressoDark text-white px-7 py-3.5 text-xs uppercase tracking-widest font-medium hover:bg-cafeMacchiato transition-all shadow-sm">
+                        Explore The Menu
                     </a>
-                    <a href="#visit" class="bg-white border border-stone-400 text-stone-700 px-6 py-3 rounded text-sm font-medium hover:bg-stone-50 transition">
-                        Location Details
+                    <a href="#visit" class="bg-white border border-latteLight text-espressoDark px-7 py-3.5 text-xs uppercase tracking-widest font-medium hover:bg-latteLight/30 transition-all shadow-sm">
+                        Plan Your Visit
                     </a>
                 </div>
             </div>
             
-            <div class="bg-white border border-mutedTan p-2 shadow-sm">
-                <img src="image_ab6ede.jpg" 
-                     alt="Paul and Jack Bakery Display Counter" 
-                     class="w-full h-72 md:h-80 object-cover">
-                <p class="text-xs text-stone-500 italic mt-2 text-center">Our main dessert display counter updated daily.</p>
+            <div class="relative group">
+                <div class="absolute inset-0 bg-espressoDark/5 translate-x-3 translate-y-3 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                <div class="relative bg-white border border-latteLight p-3 shadow-md overflow-hidden">
+                    <img src="image_ab6ede.jpg" 
+                         alt="Paul and Jack Bakery Display Counter" 
+                         class="w-full h-80 md:h-96 object-cover grayscale-[10%] group-hover:scale-[1.02] transition-transform duration-500">
+                    <p class="text-[11px] text-mutedTaupe tracking-wider uppercase mt-3 text-center">Curated daily display counter</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="border-b border-mutedTan py-6 bg-classicBeige text-sm text-stone-700">
-        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-                <p class="font-bold text-coffeeBrown">Location</p>
-                <p class="text-xs mt-0.5">Wake Forest, North Carolina</p>
+    <section class="border-b border-latteLight py-8 bg-latteLight/30 text-xs uppercase tracking-widest text-mutedTaupe">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-2">
+                <p class="font-semibold text-espressoDark mb-1">Location</p>
+                <p class="text-[10px] lowercase first-letter:uppercase tracking-normal font-light">Wake Forest, North Carolina</p>
             </div>
-            <div>
-                <p class="font-bold text-coffeeBrown">Daily Hours</p>
-                <p class="text-xs mt-0.5">Open Daily until 8:00 PM</p>
+            <div class="p-2">
+                <p class="font-semibold text-espressoDark mb-1">Daily Hours</p>
+                <p class="text-[10px] lowercase first-letter:uppercase tracking-normal font-light">Open Daily until 8:00 PM</p>
             </div>
-            <div>
-                <p class="font-bold text-coffeeBrown">Average Cost</p>
-                <p class="text-xs mt-0.5">$10–$20 per person</p>
+            <div class="p-2">
+                <p class="font-semibold text-espressoDark mb-1">Average Cost</p>
+                <p class="text-[10px] lowercase first-letter:uppercase tracking-normal font-light">$10–$20 per guest</p>
             </div>
-            <div>
-                <p class="font-bold text-coffeeBrown">Business Type</p>
-                <p class="text-xs mt-0.5">Locally Owned Bakery & Cafe</p>
+            <div class="p-2">
+                <p class="font-semibold text-espressoDark mb-1">Experience</p>
+                <p class="text-[10px] lowercase first-letter:uppercase tracking-normal font-light">Locally Owned Modern Cafe</p>
             </div>
         </div>
     </section>
 
-    <section id="menu" class="py-16 max-w-5xl mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl text-coffeeBrown font-normal mb-3">Our Menu Selection</h2>
-            <p class="text-sm text-stone-600">A look at our signature dessert brookies and classic laminated pastries.</p>
+    <section id="menu" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl text-espressoDark font-normal mb-3">Signature Menu Selection</h2>
+            <p class="text-sm text-stone-500 font-light italic">A curated look at our modern dessert brookies and butter-laminated pastry collections.</p>
             
-            <div class="bg-white border border-stone-300 rounded p-4 text-xs text-stone-700 text-left mt-4 leading-relaxed">
-                <strong>Please Note:</strong> The items listed below represent our core specialty products but do not include all available in-store options. Our counter display changes regularly with seasonal desserts, fresh tarts, traditional rolls, and weekly items. Please visit our shop to view the full assortment available today.
+            <div class="bg-latteLight/40 border border-latteLight p-5 text-xs text-stone-600 text-left mt-6 leading-relaxed font-light">
+                <strong class="text-espressoDark font-semibold">Note on Availability:</strong> Our menu updates regularly based on seasonal dessert formulas, fresh organic fruit tarts, and limited weekly creations. Visit the boutique display case to discover our full modern layout for today.
             </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abd074.png" alt="Oreo Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abd074.png" alt="Oreo Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Oreo Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        A combination of traditional dark chocolate brownie and cookie base layers, topped with standard Oreo sandwich biscuits.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Oreo Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        A modern multi-layer hybrid dessert. Decadent dark chocolate fudge brownie layered with a cookie dough base, topped with crushed cocoa sandwich biscuits.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Standard Selection</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Core Selection</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abd03c.png" alt="Lotus Biscoff Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abd03c.png" alt="Lotus Biscoff Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Lotus Biscoff Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Features premium caramelized speculoos cookie spread integrated into our signature multi-layer baked dessert bar.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Lotus Biscoff Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Infused with premium caramelised European speculoos spread integrated seamlessly throughout our house signature double-baked dessert bar.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Popular Item</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-espressoDark text-white px-2.5 py-1 font-medium">House Favorite</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abd018.jpg" alt="Almond Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abd018.jpg" alt="Almond Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Almond Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Prepared with rich almond frangipane filling and topped with roasted sliced almonds and white powdered sugar.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Almond Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Prepared with rich organic almond frangipane reduction and finished elegantly with crisp roasted sliced almonds and light dusting sugar.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Traditional Style</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Classic Style</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abcfdb.png" alt="Lemon Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abcfdb.png" alt="Lemon Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Lemon Confit Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Infused with a tangy house-made lemon confit swirl to balance the sweet profile of our white chocolate base paste.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Lemon Confit Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Strikes a vibrant balance with a bright house-made lemon confit citrus ribbon layered over a premium white chocolate blondie paste foundation.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Citrus Variation</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Citrus Variant</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abcd12.png" alt="Chocolate Ganache Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abcd12.png" alt="Chocolate Ganache Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Chocolate Ganache Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Layered with dense semi-sweet chocolate ganache filling, chocolate chips, and crushed roasted hazelnuts.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Chocolate Ganache Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Intense profile layered with rich semi-sweet chocolate ganache glaze, mini chunks, and finished with crushed toasted hazelnuts.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Classic Choice</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Signature Dark</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abccd9.png" alt="Red Velvet Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abccd9.png" alt="Red Velvet Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Red Velvet Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        A traditional red velvet base combined with white chocolate chunks and a tart raspberry filling center.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Red Velvet Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Vibrant cocoa red velvet base combined beautifully with smooth white chocolate chips and a tangy, refined raspberry preserve core.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">House Special</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Boutique Blend</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abccb4.png" alt="Triple Chocolate Brookie" class="h-44 w-44 object-contain">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center p-4">
+                        <img src="image_abccb4.png" alt="Triple Chocolate Brookie" class="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Triple Chocolate Brookie</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Prepared with three distinct varieties of chocolate chips (dark, milk, and white) evenly distributed throughout the dough.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Triple Chocolate Brookie</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        The ultimate luxury roast profile, featuring premium Belgian dark, pure milk, and smooth white chocolate chunks folded into cookie dough.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Rich Profile</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Triple Blend</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abcc79.jpg" alt="Classic French Croissant" class="h-44 w-44 object-cover">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center">
+                        <img src="image_abcc79.jpg" alt="Classic French Croissant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Classic French Croissant</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Traditional laminated pastry dough prepared with pure butter, creating a flaky golden exterior crust.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Classic French Croissant</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Authentic multi-layer laminated pastry formulated with select pure Normandy-style butter for a delicate, crisp golden shell.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Baked Fresh</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Morning Lamination</span>
                 </div>
             </div>
 
-            <div class="bg-white border border-mutedTan rounded p-4 flex flex-col justify-between shadow-sm">
+            <div class="group bg-white border border-latteLight p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
                 <div>
-                    <div class="h-48 overflow-hidden bg-stone-100 border border-stone-200 mb-4 flex items-center justify-center">
-                        <img src="image_abcc3c.jpg" alt="Glazed Specialty Croissants" class="h-44 w-44 object-cover">
+                    <div class="h-56 overflow-hidden bg-warmCream border border-latteLight/60 mb-5 flex items-center justify-center">
+                        <img src="image_abcc3c.jpg" alt="Glazed Specialty Croissants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl font-medium text-coffeeBrown mb-1">Specialty Glazed Croissants</h3>
-                    <p class="text-xs text-stone-500 leading-relaxed">
-                        Our crisp buttery croissants finished with traditional fruit reductions, available in Strawberry Vanilla or Blueberry Lemon options.
+                    <h3 class="text-xl text-espressoDark mb-2 font-normal">Specialty Glazed Croissants</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed font-light">
+                        Our butter-laminated croissants finished with refined fruit reductions. Available in Strawberry Vanilla Bean or Infused Blueberry Lemon options.
                     </p>
                 </div>
-                <div class="mt-4 pt-2 border-t border-stone-100 flex justify-between items-center">
-                    <span class="text-sm font-bold text-stone-800">$7.99</span>
-                    <span class="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded">Glazed Daily</span>
+                <div class="mt-6 pt-3 border-t border-latteLight/60 flex justify-between items-center">
+                    <span class="text-sm font-medium text-espressoDark">$7.99</span>
+                    <span class="text-[10px] uppercase tracking-wider bg-latteLight/60 text-mutedTaupe px-2.5 py-1 font-medium">Glazed Daily</span>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="reviews" class="py-16 bg-white border-t border-mutedTan">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-8 pb-4 border-b border-stone-200">
+    <section id="reviews" class="py-20 bg-white border-t border-latteLight">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 pb-6 border-b border-latteLight">
                 <div>
-                    <h2 class="text-2xl text-coffeeBrown font-normal">Customer Reviews</h2>
-                    <p class="text-xs text-stone-500">Feedback from local community visitors.</p>
+                    <h2 class="text-2xl md:text-3xl text-espressoDark font-normal">Guest Experiences</h2>
+                    <p class="text-xs text-mutedTaupe uppercase tracking-wider mt-1">Feedback from our local Wake Forest community</p>
                 </div>
-                <div class="text-sm text-stone-700 font-semibold mt-2 sm:mt-0">
-                    Overall Rating: <span class="text-coffeeBrown">4.9 / 5.0 stars</span> (Based on 1,221 Google Reviews)
+                <div class="text-xs uppercase tracking-widest text-espressoDark font-medium mt-4 md:mt-0">
+                    Overall Rating: <span class="text-mutedTaupe font-normal">4.9 / 5.0 Stars</span> <span class="text-stone-400 font-light lowercase tracking-normal">(1,221 Reviews)</span>
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6 text-xs text-stone-600">
-                <div class="bg-classicBeige/30 border border-mutedTan p-4 rounded shadow-sm">
-                    <p class="italic mb-4">"The Biscoff Brookie is to die for. So DELICIOUS!!"</p>
-                    <p class="font-bold text-stone-700">— Annalee R.</p>
+            <div class="grid md:grid-cols-3 gap-8 text-xs text-stone-600 font-light">
+                <div class="bg-warmCream border border-latteLight p-6 shadow-sm flex flex-col justify-between">
+                    <p class="italic leading-relaxed mb-6">"The contemporary Biscoff hybrid Brookie is incredible. Perfect dessert balance and highly addicting."</p>
+                    <p class="font-medium uppercase tracking-wider text-espressoDark text-[10px]">— Annalee R.</p>
                 </div>
 
-                <div class="bg-classicBeige/30 border border-mutedTan p-4 rounded shadow-sm">
-                    <p class="italic mb-4">"This bakery felt straight out of a dream! The food was both delicious and fresh. You can tell each pastry is baked with care and love, and the bakery had such an authentic European feel! It was so aesthetic in there..."</p>
-                    <p class="font-bold text-stone-700">— Keira Baxt</p>
+                <div class="bg-warmCream border border-latteLight p-6 shadow-sm flex flex-col justify-between">
+                    <p class="italic leading-relaxed mb-6">"This space feels pulled straight out of a modern European design blog. The pastries are clean, beautifully crafted, and the ambiance is stunningly minimalist and authentic."</p>
+                    <p class="font-medium uppercase tracking-wider text-espressoDark text-[10px]">— Keira Baxt</p>
                 </div>
 
-                <div class="bg-classicBeige/30 border border-mutedTan p-4 rounded shadow-sm">
-                    <p class="italic mb-4">"The customer service, food, and coffee was all AMAZING!!! Sergej took our order and was very lovely. We got the pistachio raspberry croissant, the cinnamon roll with custard, and the creme brûlée bomboloni. All three magnificent!"</p>
-                    <p class="font-bold text-stone-700">— Maggie Allen</p>
+                <div class="bg-warmCream border border-latteLight p-6 shadow-sm flex flex-col justify-between">
+                    <p class="italic leading-relaxed mb-6">"Exceptional espresso profile, customer service, and environment. The pistachio raspberry lamination and custom creme brûlée options were absolute standalone masterpieces."</p>
+                    <p class="font-medium uppercase tracking-wider text-espressoDark text-[10px]">— Maggie Allen</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="visit" class="bg-coffeeBrown text-classicBeige py-12">
-        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-            <div class="space-y-4">
-                <h2 class="text-2xl font-normal text-white">Store Location & Operations</h2>
-                <p class="text-xs text-stone-300 leading-relaxed">
-                    We offer indoor cafe seating along with bakery counter service for local takeaway orders. Please see our traditional storefront details below.
+    <section id="visit" class="bg-espressoDark text-warmCream py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-normal text-white">Boutique Location &amp; Hours</h2>
+                <p class="text-sm text-mutedTaupe font-light leading-relaxed max-w-md">
+                    We host curated indoor lounge seating alongside our espresso bar and walk-up dessert counter. Stop by for artisan takeaway service or light dining.
                 </p>
                 
-                <div class="space-y-2 text-xs text-stone-200">
-                    <p><strong class="text-white">Address:</strong> 2010 S Main St #404, Wake Forest, NC 27587</p>
-                    <p><strong class="text-white">Phone:</strong> (919) 855-0870</p>
-                    <p><strong class="text-white">Operating Hours:</strong> Open Daily — Closes at 8:00 PM</p>
+                <div class="space-y-3 text-xs tracking-wide font-light text-stone-300 pt-2">
+                    <p><strong class="text-white uppercase tracking-widest font-medium mr-2">Address:</strong> 2010 S Main St #404, Wake Forest, NC 27587</p>
+                    <p><strong class="text-white uppercase tracking-widest font-medium mr-2">Phone:</strong> (919) 855-0870</p>
+                    <p><strong class="text-white uppercase tracking-widest font-medium mr-2">Operations:</strong> Open Daily — Current Service Until 8:00 PM</p>
                 </div>
             </div>
 
-            <div class="bg-stone-800 p-6 border border-stone-700 rounded text-xs space-y-4">
+            <div class="bg-cafeMacchiato/40 p-8 border border-white/10 space-y-6 backdrop-blur-sm">
                 <div>
-                    <h3 class="text-sm font-bold text-white mb-1">Beverage Pairings</h3>
-                    <p class="text-stone-300 leading-relaxed">
-                        A full menu of espresso preparations, classic drip coffee, hot teas, and chilled milk options is available directly at the counter to complement your pastry choice.
+                    <h3 class="text-sm uppercase tracking-widest font-medium text-white mb-2">Artisan Coffee Pairings</h3>
+                    <p class="text-xs text-stone-300 font-light leading-relaxed">
+                        A dedicated modern menu of slow-pour espresso extras, single-origin drips, organic herbal infusions, and specialty plant milks is served continuously at the bar to frame your pastry experience.
                     </p>
                 </div>
-                <div class="border-t border-stone-700 pt-3 flex justify-between text-[11px] text-stone-400 font-medium">
-                    <span>Service: Dine-in & Takeout</span>
-                    <span>Atmosphere: Quiet Café Environment</span>
+                <div class="border-t border-white/10 pt-4 flex justify-between text-[10px] uppercase tracking-widest text-mutedTaupe font-medium">
+                    <span>Dine-In &amp; Boutique Takeout</span>
+                    <span>Minimalist Cafe Vibe</span>
                 </div>
                 <div class="pt-2">
-                    <a href="https://maps.google.com" target="_blank" class="block text-center bg-white text-coffeeBrown font-semibold py-2.5 rounded hover:bg-stone-100 transition">
-                        Get Directions via Google Maps
+                    <a href="https://maps.google.com" target="_blank" class="block text-center bg-white text-espressoDark font-medium text-xs uppercase tracking-widest py-3.5 hover:bg-warmCream transition-all shadow-sm">
+                        Open Google Maps Directions
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-stone-900 text-stone-500 text-center py-6 text-xs border-t border-stone-800">
-        <p>© 2026 Paul and Jack Bakery. Traditional pastries and coffee service.</p>
+    <footer class="bg-modernCharcoal text-stone-500 text-center py-8 text-[11px] tracking-wider uppercase border-t border-stone-900">
+        <p>&copy; 2026 Paul &amp; Jack Bakery. Fine Pastries &amp; Contemporary Espresso Service.</p>
     </footer>
 
 </body>
