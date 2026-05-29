@@ -10,11 +10,12 @@
             theme: {
                 extend: {
                     colors: {
-                        berryPink: '#FF85A2',
-                        bubblegum: '#FFB3C6',
-                        creamCake: '#FFF9F2',
-                        sweetBrown: '#5C4033',
-                        cookieGold: '#F3C68F'
+                        warmEspresso: '#3E2723',
+                        pastryGold: '#D7CCC8',
+                        softCream: '#FFFDF9',
+                        bakeryPink: '#FF8A9A',
+                        berryRose: '#E91E63',
+                        glassBlue: '#E0F7FA'
                     }
                 }
             }
@@ -27,193 +28,117 @@
         body { font-family: 'Quicksand', sans-serif; }
         h1, h2, h3 { font-family: 'Fredoka', sans-serif; }
         
-        /* Custom scrollbar for extra cuteness */
+        /* Custom scrollbar matching the cute cafe aesthetic */
         ::-webkit-scrollbar { width: 12px; }
-        ::-webkit-scrollbar-track { background: #FFF9F2; }
+        ::-webkit-scrollbar-track { background: #FFFDF9; }
         ::-webkit-scrollbar-thumb { 
-            background: #FFB3C6; 
+            background: #FF8A9A; 
             border-radius: 10px; 
-            border: 3px solid #FFF9F2; 
+            border: 3px solid #FFFDF9; 
         }
     </style>
 </head>
-<body class="bg-creamCake text-sweetBrown antialiased">
+<body class="bg-softCream text-warmEspresso antialiased">
 
-    <header class="sticky top-0 z-50 bg-creamCake/90 backdrop-blur-md border-b-4 border-dashed border-bubblegum">
+    <header class="sticky top-0 z-50 bg-softCream/90 backdrop-blur-md border-b-4 border-dashed border-bakeryPink">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold tracking-wider text-berryPink flex items-center gap-2">
+            <a href="#" class="text-3xl font-bold tracking-wider text-berryRose flex items-center gap-2">
                 🥐 Paul & Jack 🍰
             </a>
             <nav class="hidden md:flex space-x-8 font-bold text-lg">
-                <a href="#menu" class="hover:text-berryPink transition-colors">✨ The Menu</a>
-                <a href="#reviews" class="hover:text-berryPink transition-colors">💕 Love Letters</a>
-                <a href="#visit" class="hover:text-berryPink transition-colors">📍 Find Us</a>
+                <a href="#menu" class="hover:text-bakeryPink transition-colors">✨ The Menu</a>
+                <a href="#reviews" class="hover:text-bakeryPink transition-colors">💕 Love Letters</a>
+                <a href="#visit" class="hover:text-bakeryPink transition-colors">📍 Find Us</a>
             </nav>
-            <a href="#visit" class="bg-berryPink text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-sweetBrown hover:scale-105 transition shadow-md">
+            <a href="#visit" class="bg-bakeryPink text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-warmEspresso hover:scale-105 transition shadow-md">
                 Come Say Hi! ✨
             </a>
         </div>
     </header>
 
     <section class="py-16 md:py-24 relative overflow-hidden">
-        <div class="absolute top-10 left-10 w-32 h-32 bg-bubblegum/20 rounded-full blur-2xl"></div>
-        <div class="absolute bottom-10 right-10 w-44 h-44 bg-cookieGold/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-10 left-10 w-32 h-32 bg-bakeryPink/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-10 right-10 w-44 h-44 bg-pastryGold/20 rounded-full blur-3xl"></div>
 
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border-2 border-bubblegum text-sm font-bold text-berryPink tracking-wide shadow-sm animate-bounce">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border-2 border-bakeryPink text-sm font-bold text-berryRose tracking-wide shadow-sm animate-bounce">
                     ⭐ 4.9 Stars & Over 1,221 Reviews! ⭐
                 </div>
-                <h1 class="text-5xl md:text-6xl font-black text-sweetBrown leading-tight">
+                <h1 class="text-5xl md:text-6xl font-black text-warmEspresso leading-tight">
                     What butter <br>
-                    <span class="text-berryPink underline decoration-dashed decoration-cookieGold">was invented for!</span> 🐻
+                    <span class="text-bakeryPink underline decoration-dashed decoration-pastryGold">was invented for!</span> 🐻
                 </h1>
                 <p class="text-xl text-stone-600 font-medium">
                     Step straight into a sweet European dream right in Wake Forest! Every single pastry is hand-baked with bundles of care, fresh butter, and lots of love.
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-                    <a href="#menu" class="bg-berryPink text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-sweetBrown transition shadow-lg transform hover:-translate-y-1">
+                    <a href="#menu" class="bg-bakeryPink text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-warmEspresso transition shadow-lg transform hover:-translate-y-1">
                         See the Treats 🍩
                     </a>
-                    <a href="#visit" class="bg-white border-3 border-cookieGold text-sweetBrown px-8 py-4 rounded-full text-lg font-bold hover:bg-stone-50 transition shadow-md">
+                    <a href="#visit" class="bg-white border-3 border-pastryGold text-warmEspresso px-8 py-4 rounded-full text-lg font-bold hover:bg-stone-50 transition shadow-md">
                         Get Directions 🗺️
                     </a>
                 </div>
             </div>
             
-            <div class="relative p-4 bg-white border-4 border-dashed border-bubblegum rounded-3xl rotate-2 shadow-xl">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/5405151905263262557" 
-                     alt="Paul and Jack Bakery Display" 
+            <div class="relative p-4 bg-white border-4 border-dashed border-bakeryPink rounded-3xl rotate-1 shadow-xl">
+                <img src="image_ab6ede.jpg" 
+                     alt="Paul and Jack Bakery Display Case" 
                      class="w-full h-80 md:h-[400px] object-cover rounded-2xl">
-                <div class="absolute -bottom-4 -left-4 bg-cookieGold text-sweetBrown px-4 py-2 rounded-xl font-bold text-sm shadow-md transform -rotate-6">
-                    ✨ Fresh out of the oven!
+                <div class="absolute -bottom-4 -left-4 bg-white border-2 border-bakeryPink text-warmEspresso px-4 py-2 rounded-xl font-bold text-sm shadow-md transform -rotate-6">
+                    ✨ Our magical display case is always full!
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white border-y-4 border-dashed border-bubblegum py-8">
+    <section class="bg-white border-y-4 border-dashed border-bakeryPink py-8">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-base font-bold">
-            <div class="p-2 rounded-2xl hover:bg-creamCake transition">
-                <p class="text-xs uppercase tracking-wider text-berryPink font-black">Find Us 📍</p>
+            <div class="p-2 rounded-2xl hover:bg-softCream transition">
+                <p class="text-xs uppercase tracking-wider text-bakeryPink font-black">Find Us 📍</p>
                 <p class="mt-1 text-stone-700">Wake Forest, NC</p>
             </div>
-            <div class="p-2 rounded-2xl hover:bg-creamCake transition">
-                <p class="text-xs uppercase tracking-wider text-berryPink font-black">Baking Hours ⏰</p>
+            <div class="p-2 rounded-2xl hover:bg-softCream transition">
+                <p class="text-xs uppercase tracking-wider text-bakeryPink font-black">Baking Hours ⏰</p>
                 <p class="mt-1 text-green-600">Open · Closes 8 PM</p>
             </div>
-            <div class="p-2 rounded-2xl hover:bg-creamCake transition">
-                <p class="text-xs uppercase tracking-wider text-berryPink font-black">Sweet Budget 💸</p>
+            <div class="p-2 rounded-2xl hover:bg-softCream transition">
+                <p class="text-xs uppercase tracking-wider text-bakeryPink font-black">Sweet Budget 💸</p>
                 <p class="mt-1 text-stone-700">$10–$20 per person</p>
             </div>
-            <div class="p-2 rounded-2xl hover:bg-creamCake transition">
-                <p class="text-xs uppercase tracking-wider text-berryPink font-black">Girl Power 👩‍🍳</p>
+            <div class="p-2 rounded-2xl hover:bg-softCream transition">
+                <p class="text-xs uppercase tracking-wider text-bakeryPink font-black">Girl Power 👩‍🍳</p>
                 <p class="mt-1 text-stone-700">Women-Owned Space</p>
             </div>
         </div>
     </section>
 
     <section id="menu" class="py-20 max-w-6xl mx-auto px-6">
-        <div class="text-center max-w-xl mx-auto mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-16">
             <div class="text-4xl text-center mb-2">🎀 🍰 🎀</div>
-            <h2 class="text-4xl md:text-5xl font-black text-sweetBrown mb-4">Our Signature Menu</h2>
-            <p class="text-lg text-stone-500 font-medium">Baked fresh daily from scratch. Take a peek at our internet-famous Brookies and lovely specialty croissants!</p>
+            <h2 class="text-4xl md:text-5xl font-black text-warmEspresso mb-4">Our Signature Menu</h2>
+            <p class="text-lg text-stone-500 font-medium mb-4">Baked fresh daily from scratch. Take a peek at some of our internet-famous Brookies and lovely specialty croissants!</p>
+            
+            <div class="inline-block bg-amber-50 border-2 border-dashed border-amber-300 rounded-2xl p-4 text-sm text-amber-900 font-medium mt-2">
+                ✨ <strong>Sweet Note:</strong> This is just a sneak peek of our favorites! Our boutique display case changes constantly with new exciting seasonal surprises, Bomboloni, tarts, and fresh bakes. Come visit us in-store to see today's full lineup! ✨
+            </div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
                 <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/9618318180716681338" alt="Brookie Lotus Biscoff" class="w-full h-full object-cover">
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abd074.png" alt="Brookie Oreo" class="h-56 w-56 object-contain rounded-2xl">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Brookie Lotus Biscoff</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Oreo</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
                         </div>
                         <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            An absolute dream mashup of rich Biscoff cookie spread, crunchy Lotus biscuit bits, and decadent velvety white chocolate.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2">
-                    <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full">🔥 Fan Favorite</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/9683525922850632766" alt="Brookie Chocolate Ganache" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Brookie Chocolate Ganache</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
-                        </div>
-                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            Pure luxury in a bite! A rich, dense combination of gourmet chocolate ganache, luscious chocolate chips, and cozy roasted hazelnuts.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2">
-                    <span class="text-xs bg-pink-100 text-pink-800 font-bold px-3 py-1 rounded-full">💯 100% Perfect Score</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/11375565241382913233" alt="Brookie Red Velvet" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Brookie Red Velvet</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
-                        </div>
-                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            Striking layers of vibrant red velvet, sweet white chocolate chips, tangy raspberry confit, and smooth, velvety cheesecake chunks.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2">
-                    <span class="text-xs bg-red-100 text-red-800 font-bold px-3 py-1 rounded-full">💖 Gorgeous & Sweet</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/5405151905263262557" alt="Classic French Croissant" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Classic French Croissant</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
-                        </div>
-                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            Flaky, gold, and incredibly buttery! Makes you feel like you've been transported straight to a beautiful boutique cafe in Paris.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2">
-                    <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full">🥐 Perfectly Laminated</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
-                <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/11842689236400171227" alt="Brookie Oreo" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Brookie Oreo</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
-                        </div>
-                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            The ultimate cookie combination! A deep, fudgy mashup packed with Oreo cookies and smooth real white chocolate creaminess.
+                            The ultimate cookie combination! A deep, fudgy brownie-cookie mashup packed with chopped Oreo biscuits and a whole cookie layered right on top.
                         </p>
                     </div>
                 </div>
@@ -222,38 +147,178 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl border-4 border-bubblegum/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bubblegum transition-all flex flex-col justify-between">
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
                 <div>
-                    <div class="h-52 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bubblegum/40">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/9925357052011138996" alt="Brookie Lemon" class="w-full h-full object-cover">
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abd03c.png" alt="Brookie Lotus Biscoff" class="h-56 w-56 object-contain rounded-2xl">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center gap-2 mb-3">
-                            <h3 class="text-2xl font-bold text-sweetBrown">Brookie Lemon Confit</h3>
-                            <span class="text-xl font-black text-berryPink bg-creamCake px-3 py-1 rounded-full border border-bubblegum">$7.99</span>
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Lotus Biscoff</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
                         </div>
                         <p class="text-stone-500 font-medium text-sm leading-relaxed">
-                            Bright, sunny, and zesty! Filled with a refreshing lemon confit swirl, white chocolate base, and aromatic organic lemon zest.
+                            An absolute dream mashup of rich Biscoff speculoos cookie spread, crunchy caramelized Lotus biscuit bits, and decadent golden crust layers.
                         </p>
                     </div>
                 </div>
                 <div class="px-6 pb-6 pt-2">
-                    <span class="text-xs bg-yellow-100 text-yellow-800 font-bold px-3 py-1 rounded-full">🍋 Sunny & Fresh</span>
+                    <span class="text-xs bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full">🔥 Fan Favorite</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abd018.jpg" alt="Brookie Almond" class="h-56 w-56 object-contain rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Almond</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Indulge in the delightful fusion of almond frangipane richness and a satisfying crispy nut finish. Dusted with elegant powdered sugar.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-yellow-100 text-yellow-900 font-bold px-3 py-1 rounded-full">🌰 Nutty & Cozy</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abcfdb.png" alt="Brookie Lemon" class="h-56 w-56 object-contain rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Lemon Confit</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Bright, sunny, and zesty! Filled with a refreshing blend of tangy lemon confit and an aromatic twist of fresh citrus peel in every bite.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-yellow-50 text-amber-700 font-bold px-3 py-1 rounded-full">🍋 Citrus Burst</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abcd12.png" alt="Brookie Chocolate Ganache" class="h-56 w-56 object-contain rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Chocolate Ganache</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Pure luxury! A heavenly combination of rich premium chocolate ganache, luscious chocolate chips, and a sweet hazelnut-infused base.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-amber-900 text-amber-100 font-bold px-3 py-1 rounded-full">🍫 #1 Most Liked</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abccd9.png" alt="Brookie Red Velvet" class="h-56 w-56 object-contain rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Red Velvet</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            A stunning fusion of deep red velvet cookie base with smooth ribbons of sweet white chocolate and a rich, tart raspberry center.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-red-100 text-red-800 font-bold px-3 py-1 rounded-full">💖 Popular Choice</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abccb4.png" alt="Brookie Triple Chocolate" class="h-56 w-56 object-contain rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Brookie Triple Chocolate</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Indulge in the ultimate chocolate experience. This dark, fudgy masterpiece brings a harmonious blend of white, milk, and dark chocolate chips.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-stone-900 text-white font-bold px-3 py-1 rounded-full">🖤 Pure Decadence</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abcc79.jpg" alt="Classic French Croissant" class="h-56 w-56 object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Classic French Croissant</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Flaky, gold, and incredibly buttery! Beautifully layered using traditional methods to deliver a crisp exterior crust with an airy interior honeycomb structure.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-amber-100 text-amber-900 font-bold px-3 py-1 rounded-full">🥐 Perfectly Laminated</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-4 border-bakeryPink/40 shadow-sm overflow-hidden hover:scale-[1.02] hover:border-bakeryPink transition-all flex flex-col justify-between">
+                <div>
+                    <div class="h-64 overflow-hidden bg-stone-100 border-b-4 border-dashed border-bakeryPink/40 p-4 flex items-center justify-center">
+                        <img src="image_abcc3c.jpg" alt="Specialty Fruit Croissants" class="h-56 w-56 object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center gap-2 mb-3">
+                            <h3 class="text-2xl font-bold text-warmEspresso">Fruit Specialty Croissants</h3>
+                            <span class="text-xl font-black text-berryRose bg-softCream px-3 py-1 rounded-full border border-bakeryPink">$7.99</span>
+                        </div>
+                        <p class="text-stone-500 font-medium text-sm leading-relaxed">
+                            Our house favorites! Freshly glazed pastries available in variations like our rich Strawberry Vanilla reduction or the delightfully tangy Blueberry Lemon glaze.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <span class="text-xs bg-pink-100 text-pink-700 font-bold px-3 py-1 rounded-full">🍓 Glazed Fresh Daily</span>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="reviews" class="py-20 bg-white border-t-4 border-dashed border-bubblegum">
+    <section id="reviews" class="py-20 bg-white border-t-4 border-dashed border-bakeryPink">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-12 gap-6">
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-black text-sweetBrown mb-2">💕 Love Letters From Our Guests</h2>
+                    <h2 class="text-4xl md:text-5xl font-black text-warmEspresso mb-2">💕 Love Letters From Our Guests</h2>
                     <p class="text-stone-500 text-lg font-medium">Real reviews from our lovely bakery community!</p>
                 </div>
-                <div class="bg-creamCake px-6 py-4 rounded-3xl border-3 border-bubblegum flex items-center gap-4 shadow-sm self-start">
-                    <span class="text-4xl font-black text-berryPink">4.9</span>
+                <div class="bg-softCream px-6 py-4 rounded-3xl border-3 border-bakeryPink flex items-center gap-4 shadow-sm self-start">
+                    <span class="text-4xl font-black text-berryRose">4.9</span>
                     <div>
                         <div class="text-amber-400 text-lg">⭐⭐⭐⭐⭐</div>
                         <p class="text-xs text-stone-400 font-bold uppercase tracking-wider">1,221+ Google Reviews</p>
@@ -262,46 +327,46 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-creamCake p-6 rounded-3xl border-2 border-bubblegum/40 shadow-sm relative">
+                <div class="bg-softCream p-6 rounded-3xl border-2 border-bakeryPink/40 shadow-sm relative">
                     <div class="absolute -top-4 -right-2 text-3xl">🧁</div>
                     <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
                     <p class="text-stone-600 font-medium text-sm italic mb-6">
                         "The Biscoff Brookie is to die for. So DELICIOUS!!"
                     </p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-bubblegum flex items-center justify-center font-bold text-white text-sm">AR</div>
+                        <div class="w-10 h-10 rounded-full bg-bakeryPink flex items-center justify-center font-bold text-white text-sm">AR</div>
                         <div>
-                            <h4 class="text-xs font-bold text-sweetBrown">Annalee R.</h4>
+                            <h4 class="text-xs font-bold text-warmEspresso">Annalee R.</h4>
                             <p class="text-[10px] text-stone-400 font-bold uppercase">Verified Sweet Tooth</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-creamCake p-6 rounded-3xl border-2 border-bubblegum/40 shadow-sm relative">
+                <div class="bg-softCream p-6 rounded-3xl border-2 border-bakeryPink/40 shadow-sm relative">
                     <div class="absolute -top-4 -right-2 text-3xl">🌸</div>
                     <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
                     <p class="text-stone-600 font-medium text-sm italic mb-6">
                         "This bakery felt straight out of a dream! The food was both delicious and fresh. You can tell each pastry is baked with care and love, and the bakery had such an authentic European feel! It was so aesthetic in there..."
                     </p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-cookieGold flex items-center justify-center font-bold text-white text-sm">KB</div>
+                        <div class="w-10 h-10 rounded-full bg-pastryGold flex items-center justify-center font-bold text-white text-sm">KB</div>
                         <div>
-                            <h4 class="text-xs font-bold text-sweetBrown">Keira Baxt</h4>
+                            <h4 class="text-xs font-bold text-warmEspresso">Keira Baxt</h4>
                             <p class="text-[10px] text-stone-400 font-bold uppercase">Local Guide</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-creamCake p-6 rounded-3xl border-2 border-bubblegum/40 shadow-sm relative">
+                <div class="bg-softCream p-6 rounded-3xl border-2 border-bakeryPink/40 shadow-sm relative">
                     <div class="absolute -top-4 -right-2 text-3xl">☕</div>
                     <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
                     <p class="text-stone-600 font-medium text-sm italic mb-6">
                         "The customer service, food, and coffee was all AMAZING!!! Sergej took our order and was very lovely. We got the pistachio raspberry croissant, the cinnamon roll with custard, and the creme brûlée bomboloni. All three magnificent!"
                     </p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-bubblegum flex items-center justify-center font-bold text-white text-sm">MA</div>
+                        <div class="w-10 h-10 rounded-full bg-bakeryPink flex items-center justify-center font-bold text-white text-sm">MA</div>
                         <div>
-                            <h4 class="text-xs font-bold text-sweetBrown">Maggie Allen</h4>
+                            <h4 class="text-xs font-bold text-warmEspresso">Maggie Allen</h4>
                             <p class="text-[10px] text-stone-400 font-bold uppercase">Local Guide</p>
                         </div>
                     </div>
@@ -310,12 +375,12 @@
         </div>
     </section>
 
-    <section id="visit" class="bg-sweetBrown text-creamCake py-16 rounded-t-[50px]">
+    <section id="visit" class="bg-warmEspresso text-softCream py-16 rounded-t-[50px]">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
             <div class="space-y-6">
                 <h2 class="text-4xl font-black text-cookieGold">🧸 Come Sweeten Your Day!</h2>
                 <p class="text-stone-300 font-medium leading-relaxed">
-                    Pop into our magical storefront for dine-in vibes or a dynamic box of treats to go. We're nestled right in Wake Forest, North Carolina waiting to smile with you!
+                    Pop into our storefront for lovely café vibes or grab a pink box of gourmet treats to go. We are located right in Wake Forest, North Carolina!
                 </p>
                 
                 <div class="space-y-4 text-base font-semibold text-stone-200">
@@ -335,19 +400,13 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="pt-2">
-                    <a href="https://m.facebook.com" target="_blank" class="inline-block bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-2.5 rounded-xl transition text-sm">
-                        Say hi on Facebook 💕
-                    </a>
-                </div>
             </div>
 
-            <div class="bg-white/5 p-8 rounded-3xl border-2 border-dashed border-bubblegum/40 flex flex-col justify-between text-center md:text-left">
+            <div class="bg-white/5 p-8 rounded-3xl border-2 border-dashed border-bakeryPink/40 flex flex-col justify-between text-center md:text-left">
                 <div>
-                    <h3 class="text-2xl font-black text-bubblegum mb-3">Menu & Sip Highlights ✨</h3>
+                    <h3 class="text-2xl font-black text-bakeryPink mb-3">Drinks & Pairings ✨</h3>
                     <p class="text-stone-300 font-medium text-sm mb-6">
-                        Make sure to try our decadent Irish Cream Iced Latte or real Italian Hot Chocolate along with any pastry selection!
+                        Pair your sweets with our authentic espresso blends, iced matchas, or signature milk drinks prepared by our baristas!
                     </p>
                     
                     <div class="space-y-3 font-bold text-sm">
@@ -357,13 +416,13 @@
                         </div>
                         <div class="bg-black/20 p-3 rounded-xl flex justify-between items-center">
                             <span>Vibe Check</span>
-                            <span class="text-cookieGold">Authentic European Dream</span>
+                            <span class="text-cookieGold">Cute Bakery Sanctuary</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-8">
-                    <a href="https://maps.google.com" target="_blank" class="w-full block text-center bg-berryPink text-white font-black py-4 rounded-2xl hover:bg-bubblegum hover:text-sweetBrown transition shadow-lg text-base">
+                    <a href="https://maps.google.com" target="_blank" class="w-full block text-center bg-bakeryPink text-white font-black py-4 rounded-2xl hover:bg-white hover:text-warmEspresso transition shadow-lg text-base">
                         🗺️ Open in Google Maps
                     </a>
                 </div>
@@ -372,7 +431,7 @@
     </section>
 
     <footer class="bg-stone-950 text-stone-600 text-center py-8 text-xs font-bold tracking-wide">
-        <p>✨ © 2026 Paul and Jack Bakery. Made with premium butter and sweet love. ✨</p>
+        <p>✨ © 2026 Paul and Jack Bakery. Hand-baked with premium ingredients and sweet love. ✨</p>
     </footer>
 
 </body>
